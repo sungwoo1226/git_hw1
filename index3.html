@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>정성우의 설문조사</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+</head>
+<body>
+	<div id="wrap">
+		<div id="top">
+
+		</div>
+		
+		<div id="navbar">
+			<ul>
+				<li><a href="index.html" >인물정보</a></li>
+				<li><a href="index2.html">학력</a></li>
+				<li><a href="index3.html" calss="selected">설문조사</a></li>
+			</ul>
+		</div>
+		<div id="header">
+			<h1>설문조사를 해봅시다.^^</h1>
+		</div>
+		<div id="center">
+			<form action="update.php" method="post">
+				사진 : 
+				<input type="file" name="photo"/><br><br>
+				이름 : 
+				<input type="text" name="name" size="10"><br><br>
+				성별 : 
+				<input type="radio" name="sex" value="m"/>남
+				<input type="radio" name="sex" value="m"/>여<br><br>
+				생년월일 : 
+				<select name="year">
+					<option value="select">선택</option>
+					<option value="y-1988">1988</option>
+					<option value="y-1989">1989</option>
+					<option value="y-1990">1990</option>
+					<option value="y-1991">1991</option>
+					<option value="y-1992">1992</option>
+					<option value="y-1993">1993</option>
+					<option value="y-1994">1994</option>
+				</select>
+				<select name="month">
+					<option value="select">선택</option>
+					<option value="m-1">1</option>
+					<option value="m-2">2</option>
+					<option value="m-3">3</option>
+					<option value="m-4">4</option>
+					<option value="m-5">5</option>
+					<option value="m-6">6</option>
+					<option value="m-7">7</option>
+					<option value="m-8">8</option>
+					<option value="m-9">9</option>
+					<option value="m-10">10</option>
+					<option value="m-11">11</option>
+					<option value="m-12">12</option>
+				</select>
+				<select name="day">
+					<option value="select">선택</option>
+					<option value="d-1">1</option>
+					<option value="d-2">2</option>
+					<option value="d-3">3</option>
+					<option value="d-4">4</option>
+					<option value="d-5">5</option>
+					<option value="d-6">6</option>
+					<option value="d-7">7</option>
+					<option value="d-8">8</option>
+					<option value="d-9">9</option>
+					<option value="d-10">10</option>
+					<option value="d-11">11</option>
+					<option value="d-12">12</option>
+					<option value="d-13">13</option>
+					<option value="d-14">14</option>
+					<option value="d-15">15</option>
+					<option value="d-16">16</option>
+					<option value="d-17">17</option>
+					<option value="d-18">18</option>
+					<option value="d-19">19</option>
+					<option value="d-20">20</option>
+					<option value="d-21">21</option>
+					<option value="d-22">22</option>
+					<option value="d-23">23</option>
+					<option value="d-24">24</option>
+					<option value="d-25">25</option>
+					<option value="d-26">26</option>
+					<option value="d-27">27</option>
+					<option value="d-28">28</option>
+					<option value="d-29">29</option>
+					<option value="d-30">30</option>
+					<option value="d-31">31</option>
+				</select><br><br>
+				이메일 :
+				<input type="text" name="email" size="25"><br>
+				<input type="checkbox" name="emailsend" value="emailsend"/>이메일로 정보를 받으시겠습니까?<br><br>
+				바라는 점 : <br>
+				<textarea cols="30" rows="5" name="want"></textarea><br><br>
+				<input type="submit" value="전송"/>
+			</form>
+		</div>
+		<div id="footer"></div>
+	</div>
+</body>
+</html>
